@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alhayah school</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="icon"
+      href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png"
+      type="image/x-icon"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- fontawsome link -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start setting box -->
+    <div class="setting-box position-fixed bg-light">
+      <div
+        class="gear position-absolute text-center d-flex justify-content-center align-items-center"
+      >
+        <i class="fa-solid fa-gear text-light"></i>
+      </div>
+      <div class="setting-container">
+        <div class="option-box py-4">
+          <h4 class="text-center my-3">اختيار اللون</h4>
+          <ul
+            class="colors-list px-0 text-center d-flex justify-content-center align-items-center"
+          >
+            <li class="active" data-color="rgb(11, 105, 107)"></li>
+            <li data-color="rgb(63, 81, 181)"></li>
+            <li data-color="rgb(27, 131, 213)"></li>
+            <li data-color="rgb(26, 53, 94)"></li>
+            <li data-color="rgb(107, 11, 65)"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end setting box -->
+
+    <!-- start header -->
+    <section class="main-header">
+      <div class="color-bars">
+        <div class="container-fluid px-0">
+          <div class="columns d-flex">
+            <div class="bg-warning"></div>
+            <div class="bg-warning"></div>
+            <div class="bg-success"></div>
+            <div class="bg-success"></div>
+            <div class="bg-info"></div>
+            <div class="bg-info"></div>
+            <div class="bg-warning"></div>
+            <div class="bg-warning"></div>
+            <div class="bg-danger"></div>
+            <div class="bg-danger"></div>
+            <div class="bg-info"></div>
+            <div class="bg-info"></div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div
+          class="container d-flex justify-content-md-center justify-content-lg-between flex-md-column flex-lg-row gap-md-3 gap-lg-0 flex-sm-wrap flex-md-nowrap"
+        >
+          <a href="#" class="img-1">
+            <img src="./imgs/colored-logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler d-sm-block d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse d-md-flex"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 flex-md-row gap-md-2 gap-lg-0">
+              <li
+                class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center"
+                  aria-current="page"
+                  href="#"
+                  >الرئيسية</a
+                >
+              </li>
+              <li
+                class="nav-item d-flex flex-column align-items-md-center dropdown mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  عن المدارس
+                </a>
+                <ul
+                  class="dropdown-menu text-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">الشروط والأحكام</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">استمارة تقييم الدورات</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item d-flex flex-column align-items-md-center dropdown mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  البرامج الدراسية
+                </a>
+                <ul
+                  class="dropdown-menu text-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >البرنامج العام للغة الانجليزية</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">برنامج المحادثات</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">البرنامج التحضيري</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">أطفال الحياة</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-item d-flex flex-column align-items-md-center dropdown mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  فروع المدارس
+                </a>
+                <ul
+                  class="dropdown-menu text-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">المدينة المنورة</a></li>
+                  <li><a class="dropdown-item" href="#">مكــة</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">أبـهـا</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li
+                class="nav-item d-flex flex-column align-items-md-center mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center"
+                  aria-current="page"
+                  href="#"
+                  >أنشطة وفعاليات
+                </a>
+              </li>
+              <li
+                class="nav-item d-flex flex-column align-items-md-center dropdown mx-xxl-2 justify-content-center"
+              >
+                <a
+                  class="nav-link px-md-2 text-md-center dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-moon"></i>
+                </a>
+                <ul
+                  class="dropdown-menu text-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" data-color="#18191A" href="#"
+                      >الوضع الليلي</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-color="white" href="#"
+                      >الوضع العادي</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="d-none d-xl-block">
+            <button type="button" class="btn btn-danger">
+              إختبار تحديد المستوي
+            </button>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <!-- end header -->
+
+    <!-- start slider -->
+
+    <!-- slider container -->
+    <div id="c1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <!-- images -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3500">
+          <img
+            src="./imgs/carousel-1.jpg"
+            class="d-block w-100"
+            alt="carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img
+            src="./imgs/carousel-2.jpg"
+            class="d-block w-100"
+            alt="carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img
+            src="./imgs/carousel-3.jpg"
+            class="d-block w-100"
+            alt="carousel"
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="3500">
+          <img
+            src="./imgs/carousel-4.jpg"
+            class="d-block w-100"
+            alt="carousel"
+          />
+        </div>
+      </div>
+      <!-- ============================== -->
+
+      <!-- indicators -->
+      <div class="carousel-indicators d-sm-none d-md-flex">
+        <button
+          type="button"
+          data-bs-target="#c1"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#c1"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#c1"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#c1"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <!-- ============================== -->
+
+      <!-- Prev & Next buttons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#c1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#c1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end slider -->
+
+    <!-- start sections -->
+    <div class="sections">
+      <div class="container">
+        <section
+          class="row position-relative"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="sec-container col-md-6 col-lg-3 text-center position-relative"
+          >
+            <div class="sec no-1 d-flex flex-column">
+              <div
+                class="icon position-absolute bg-light rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h2 class="title fw-bold mt-4 mb-0">إنجازات الحياة</h2>
+            </div>
+            <a
+              href="#"
+              class="position-absolute w-100 h-100 d-flex align-items-end justify-content-center pb-2"
+            >
+              <i class="fa-solid fa-chevron-down text-light"></i>
+            </a>
+          </div>
+          <div
+            class="sec-container col-md-6 col-lg-3 text-center position-relative"
+          >
+            <div class="sec no-2 d-flex flex-column">
+              <div
+                class="icon position-absolute bg-light rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+              <h2 class="title fw-bold mt-4 mb-0">القبول والتسجيل</h2>
+            </div>
+            <a
+              href="#"
+              class="position-absolute w-100 h-100 d-flex align-items-end justify-content-center pb-2"
+            >
+              <i class="fa-solid fa-chevron-down text-light"></i>
+            </a>
+          </div>
+          <div
+            class="sec-container col-md-6 col-lg-3 text-center position-relative"
+          >
+            <div class="sec no-3 d-flex flex-column">
+              <div
+                class="icon position-absolute bg-light rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-address-book"></i>
+              </div>
+              <h2 class="title fw-bold mt-4 mb-0">مجلة الحياة</h2>
+            </div>
+            <a
+              href="#"
+              class="position-absolute w-100 h-100 d-flex align-items-end justify-content-center pb-2"
+            >
+              <i class="fa-solid fa-chevron-down text-light"></i>
+            </a>
+          </div>
+          <div
+            class="sec-container col-md-6 col-lg-3 text-center position-relative"
+          >
+            <div class="sec no-4 d-flex flex-column">
+              <div
+                class="icon position-absolute bg-light rounded-circle d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h2 class="title fw-bold mt-4 mb-0">مدارس الحياة</h2>
+            </div>
+            <a
+              href="#"
+              class="position-absolute w-100 h-100 d-flex align-items-end justify-content-center pb-2"
+            >
+              <i class="fa-solid fa-chevron-down text-light"></i>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- end sections -->
+
+    <!-- start News -->
+    <section class="news text-center">
+      <div class="container">
+        <!-- start special heading -->
+        <h1 class="special-heading position-relative">أحدث الاخبار</h1>
+        <!-- end special heading -->
+
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
+          <div class="column col-lg-6 col-xl-3">
+            <div class="card p-3 no-1 d-flex flex-column">
+              <a href="">
+                <img src="./imgs/Our-services-04.png" class="w-100" alt="" />
+              </a>
+              <div
+                class="badge p-sm-2 p-md-3 no-1 text-light fs-6 position-absolute"
+              >
+                19 <br />
+                Apr
+              </div>
+              <div class="card-body text-end position-relative">
+                <h3 class="no-1">تواصل فعال مع أولياء الأمور</h3>
+                <p>إدارة الاتصال المؤسسي</p>
+                <div class="desc">
+                  <p>
+                    إن التعاون مع أولياء الأمور هو مفتاح التطور الفعال للتقدم
+                    والإنجاز التعليمي لكل طالب. تشجع مدارس الحياة مشاركة أولياء
+                    الأمور في جوانب حياة المدرسة ذات الصلة بالنجاح والإنجاز
+                    التعليمي للطلاب.
+                  </p>
+                </div>
+                <a href="" class="more position-absolute">
+                  <i class="fa-solid fa-angles-left"></i>
+                  اقرأ المزيد
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-lg-6 col-xl-3">
+            <div class="card p-3 no-2 d-flex flex-column">
+              <a href="">
+                <img src="./imgs/Our-services-03.png" class="w-100" alt="" />
+              </a>
+              <div
+                class="badge p-sm-2 p-md-3 no-2 text-light fs-6 position-absolute"
+              >
+                05 <br />
+                Mar
+              </div>
+              <div class="card-body text-end position-relative">
+                <h3 class="no-2">تطوير مستمر للمعلمين</h3>
+                <p>40 ساعة تدريبية لكل معلم خلال العام الدراسي 1440 – 1441ھ</p>
+                <div class="desc">
+                  <p>
+                    المعلمون أحد أهم أركان العملية التعليمية حيث نقدم برامج
+                    شاملة لتطويرهم المهني لضمان استمرار نمو مهاراتهم ومعرفتهم
+                    ليكونوا مصدر إلهام لطلابنا.
+                  </p>
+                </div>
+                <a href="" class="more position-absolute">
+                  <i class="fa-solid fa-angles-left"></i>
+                  اقرأ المزيد
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-lg-6 col-xl-3">
+            <div class="card p-3 no-3 d-flex flex-column">
+              <a href="">
+                <img src="./imgs/Our-services-02.png" class="w-100" alt="" />
+              </a>
+              <div
+                class="badge p-sm-2 p-md-3 no-3 text-light fs-6 position-absolute"
+              >
+                21 <br />
+                Dec
+              </div>
+              <div class="card-body text-end position-relative">
+                <h3 class="no-3">أسلوب تعليمي متميز</h3>
+                <p>
+                  في مدارسنا: الطلاب سعداء ومحترمون وموثوق بهم ويشاركون في
+                  التعلم.
+                </p>
+                <div class="desc">
+                  <p>
+                    يستفيد طلابنا المبدعون من قاعات تعليمية كبيرة تعزز بيئة
+                    التعلم ؛ كما استثمرت مدارس الحياة في أحدث التقنيات لتعزيز
+                    الجودة المتميزة للتعليم.
+                  </p>
+                </div>
+                <a href="" class="more position-absolute">
+                  <i class="fa-solid fa-angles-left"></i>
+                  اقرأ المزيد
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column col-lg-6 col-xl-3">
+            <div class="card p-3 no-4 d-flex flex-column">
+              <a href="">
+                <img src="./imgs/Our-services-05.png" class="w-100" alt="" />
+              </a>
+              <div
+                class="badge p-sm-2 p-md-3 no-4 text-light fs-6 position-absolute"
+              >
+                21 <br />
+                Dec
+              </div>
+              <div class="card-body text-end position-relative">
+                <h3 class="no-4">التعليم عن بعد</h3>
+                <p>إدارة الاتصال المؤسسي</p>
+                <div class="desc">
+                  <p>
+                    عندما مر العالم بأزمة كورونا covid19 لم نتوقف ، بل استمر
+                    تعليمنا عن بعد..
+                  </p>
+                </div>
+                <a href="" class="more position-absolute">
+                  <i class="fa-solid fa-angles-left"></i>
+                  اقرأ المزيد
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end News -->
+
+    <!-- start parents -->
+    <section class="parents text-center">
+      <div class="container">
+        <!-- start special heading -->
+        <h1 class="special-heading position-relative">توصيات الآباء</h1>
+        <!-- end special heading -->
+        <div class="row">
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 position-relative"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="card p-4 d-flex flex-column text-end">
+              <q class="quote mb-5">
+                كان من دواعي سروري رؤية أولادي بمستوى تحصيلي وعلمي جيد بالمدرسة.
+                مدارس جيل الإبداع تهتم بالأطفال وتضع في جهدها المزيد لتقديم
+                الموضوعات وتعزيز مهارات الأطفال
+              </q>
+              <p class="desc">صالح - مدير أعمال</p>
+            </div>
+            <svg
+              height="100"
+              class="position-absolute"
+              viewBox="0 0 1792 1792"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M832 960v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z"
+              />
+            </svg>
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 position-relative"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="card p-4 d-flex flex-column text-end">
+              <q class="quote mb-5">
+                نشكركم على العناية الجيدة لإبني خلال فترة دراسته في مدرسة جيل
+                الإبداع ولدي الأن أكثر تحصيلاً وأكثر ثقة بنفسه . أنا متأكد من
+                أنه سيتفوق على جميع أصدقائه في التعلم والتحصل .
+              </q>
+              <p class="desc">عبد الله - مدير عام</p>
+            </div>
+            <svg
+              height="100"
+              class="position-absolute"
+              viewBox="0 0 1792 1792"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M832 960v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z"
+              />
+            </svg>
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 position-relative"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="card p-4 d-flex flex-column text-end">
+              <q class="quote mb-5">
+                أعجبني الإعداد العام وتصميم الفصول والمعامل في مدارس جيل الإبداع
+                التي أجدها توفر بيئة مثالية لرعاية الأطفال ومساعدتهم على التعلم
+                والتفاعل وتنمية قدراتهم العلمية .
+              </q>
+              <p class="desc">محمد - موظف حكومي</p>
+            </div>
+            <svg
+              height="100"
+              class="position-absolute"
+              viewBox="0 0 1792 1792"
+              width="100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M832 960v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136zm896 0v384q0 80-56 136t-136 56h-384q-80 0-136-56t-56-136v-704q0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5h64q26 0 45 19t19 45v128q0 26-19 45t-45 19h-64q-106 0-181 75t-75 181v32q0 40 28 68t68 28h224q80 0 136 56t56 136z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end parents -->
+
+    <!-- start describtion -->
+    <div class="describtion text-center">
+      <!-- start special heading -->
+      <h1 class="special-heading position-relative">سياستنا</h1>
+      <!-- end special heading -->
+      <div class="cont-fluid p-5">
+        <div class="container text-center">
+          <section class="row position-relative">
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-heart text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الإخلاص</h4>
+                <p class="text-light">
+                  ننطلق ف عملنا من رسالة التربية والتعليم وهي أمانة في أعناقنا
+                  تحملناها ونسعى بكل تفان في أدائها بدعم ومؤازرة من الآباء وكافة
+                  فعاليات المجتمع
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-medal text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الفعالية</h4>
+                <p class="text-light">
+                  نسعى لتأكيد مبدأ الانتاج لكل مستويات المنظمة كضرورة لحياة
+                  الانسان ودوره ف الحياة ونعمل على تشجيع الانسان المنتج وليكون
+                  كل عضو مشجعا لهذا المبدأ ف نفوس الآخرين.
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-rocket text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الغاية</h4>
+                <p class="text-light">
+                  تحقيق غايات وطموحات المجتمع والاهتمام بالقيم بكافة مستويات
+                  المنظمة و جعل هذه القيم محفزة للسلوك ومنظمة للعلاقات وموجهة
+                  لكافة الانشطة
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-trophy text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الريادة</h4>
+                <p class="text-light">
+                  نعمل بروح المبادرة والعطاء وعلى كل فرد أن يقدم أقصى ما لديه من
+                  إبداع لنبني نموذجا تعليميا مميزا واحترافيا في ظل المنظومات
+                  المحلية والعالمية.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="row position-relative">
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-certificate text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الجودة</h4>
+                <p class="text-light">
+                  دافعنا الذاتي تحقيق الانجازات مرتكزين في عملنا على مبدأ
+                  التحسين والتطوير المستمر و الإتقان والدقة في الأداء للعمل.
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-puzzle-piece text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">التكامل</h4>
+                <p class="text-light">
+                  نسعى للاهتمام بكافة جوانب الشخصية بتوازن وانسجام ف توجيه
+                  نشاطات الأفراد والبرامج نحو بناء الشخصية ف كافة مناحي الحياة
+                  (الروحية، العقلية، الاجتماعية ، الصحية ، المهنية )
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-handshake text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">الشراكة</h4>
+                <p class="text-light">
+                  رسالتنا التربوية والتعليم مهمد الجميع من آباء و مؤسسات المجتمع
+                  المدني ، و نجتهد لبناء جسور من التعاون والمشاورة لتحقيق الآمال
+                  والطموحات ف بناء جيل المستقبل.
+                </p>
+              </div>
+            </div>
+            <div class="column col-lg-3 position-relative">
+              <div class="desc-container p-4 d-flex flex-column text-center">
+                <span
+                  class="icon rounded-circle d-flex justify-content-center align-items-center m-auto"
+                >
+                  <i class="fa-solid fa-hands-holding text-light"></i>
+                </span>
+                <h4 class="my-3 text-light">النزاهة</h4>
+                <p class="text-light">
+                  منهجنا ف التعامل الوضوح والصراحة بين كافة مكونات المنظمة و
+                  الاطراف ذات العلاقة و نؤكد على التزامات كافة الأطراف لبناء
+                  الثقة والرضى الوظيفي فى منظومتنا و يؤكد الثقة الاحترام
+                  المتبادل بين منسوبينا وكذلك بين مؤسستنا التربوية والمستفيدين
+                  من خدماتنا .
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- end describtion -->
+
+    <!-- start video -->
+
+    <section class="video-cont text-center py-5 my-5">
+      <!-- start special heading -->
+      <h1 class="special-heading position-relative">مقاطع الفيديو</h1>
+      <!-- end special heading -->
+      <div
+        class="video position-relative d-flex justify-content-center align-items-center"
+        id="video"
+      >
+        <video controls muted autoplay loop class="w-100">
+          <source src="./imgs/معايدة طلاب الابتدائي.mp4" type="video/mp4" />
+          your browser doesn't support video tag
+        </video>
+        <div
+          class="text d-flex flex-column position-absolute w-100 text-center text-light"
+        >
+          <h2 class="mb-5">معايدة طلاب الصف الابتدائي</h2>
+          <a
+            href="https://www.youtube.com/channel/UCBGHuJPKpRaxoNXBcvT2Nhw"
+            target="_blank"
+          >
+            <button class="fw-bold">المزيد</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end video -->
+
+    <!-- start features -->
+    <div class="features py-4 my-4">
+      <div class="container">
+        <div class="row">
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center py-4"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <span
+              class="icon d-flex justify-content-center align-items-center m-auto p-3"
+            >
+              <i class="fa-solid fa-graduation-cap text-light"></i>
+            </span>
+            <h4 class="my-3 fw-bold">متعة التعليم</h4>
+            <p class="text-center">
+              لقد نجحنا في جعل أكثر من 5,000 عميل وولي أمر راضيين عن النتائج
+            </p>
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center py-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span
+              class="icon d-flex justify-content-center align-items-center m-auto p-3"
+            >
+              <i class="fa-solid fa-suitcase text-light"></i>
+            </span>
+            <h4 class="my-3 fw-bold">الحلول الناجحة</h4>
+            <p class="text-center">
+              نحن نفخر بأن الحلول التي إخترناها أثبتت نجاحها مع آلاف العملاء
+            </p>
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center py-4"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <span
+              class="icon d-flex justify-content-center align-items-center m-auto p-3"
+            >
+              <i class="fa-solid fa-jet-fighter text-light"></i>
+            </span>
+            <h4 class="my-3 fw-bold">التقدم المضمون</h4>
+            <p class="text-center">
+              أكثر من 90% من طلابنا يحققون تقدم ملحوظ في اللغة الانجليزية خلال
+              اسابيع فقط
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end features -->
+
+    <!-- start about -->
+    <div class="about text-center py-5">
+      <!-- start special heading -->
+      <h1 class="special-heading position-relative">نبذة عنا</h1>
+      <!-- end special heading -->
+      <div class="cont-fluid">
+        <div class="container">
+          <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+            <div
+              class="column col-lg-6 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-evenly lh-lg fs-5 text-md-end text-sm-center"
+            >
+              <p class="desc">
+                مدارس الحياة الأهلية بالمدينة المنورة تأسست عام 1419 هـ وتعمل
+                على تنشئة جيل مثقف ومتعلم وفق أحدث الوسائل والنظم التعليمية مع
+                المحافظة على القيم والمبادئ الإسلامية حتى يكون قادرا على مواجهة
+                التحديات والصعوبات ويحقق أهدافه ويبلغ آماله ويخدم وطنه وأمته.
+              </p>
+              <a
+                href="https://www.alhayah.edu.sa/wp-content/uploads/2020/07/الملف-التعريفي-لمدارس-الحياة-الأهلية.pdf"
+                class="d-flex p-3 align-items-center m-sm-auto m-md-0"
+              >
+                <span class="fw-bold">الملف التعريفي</span>
+                <i class="fa-solid fa-cloud-arrow-down px-3"></i>
+              </a>
+            </div>
+            <div
+              class="column col-lg-6 mb-sm-3 mb-lg-0 d-flex justify-content-center"
+            >
+              <img src="./imgs/about-us.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+
+    <!-- start register -->
+    <div class="register">
+      <div class="container">
+        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+          <div
+            class="column col-lg-9 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-center align-items-lg-start align-items-sm-center"
+          >
+            <p class="fs-4 fw-bold text-light mb-0">تسجيل الطلاب</p>
+            <p class="fs-1 fw-bold text-light">استمارة التسجيل والقبول</p>
+          </div>
+          <div
+            class="column col-lg-3 mb-sm-3 mb-lg-0 d-flex justify-content-center align-items-center"
+          >
+            <a href="">
+              <button class="fs-5 bg-light fw-bold">القبول والتسجيل</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end register -->
+
+    <!-- start footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row" data-aos="zoom-out-down" data-aos-duration="1000">
+          <div
+            class="logo column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-start align-items-center"
+          >
+            <img src="./imgs/logo 2.png" alt="" />
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-start align-items-lg-start align-items-sm-center"
+          >
+            <h5 class="text-light">مدارس الحياة</h5>
+            <p class="text-light mt-2">
+              تضم مدارسنا مجموعة واسعة من المرافق الرياضية للأنشطة أثناء وبعد
+              اليوم الدراسي <br />
+              نمكن الطلاب من حل المشكلات، وإعادة المحاولة، والمخاطرة،
+              والاستفسار، والابتكار، والتأثير وإلهام الآخرين.
+            </p>
+          </div>
+          <div
+            class="column col-lg-4 mb-sm-3 mb-lg-0 d-flex flex-column justify-content-center align-items-lg-start align-items-sm-center"
+          >
+            <h5 class="text-light">معلومات الاتصال</h5>
+            <ul class="px-0 d-flex flex-column text-sm-center text-lg-end">
+              <li class="my-2">
+                <i class="fa-solid fa-phone text-light"></i>
+                <a href="tel:00966502525253" class="text-light px-3"
+                  >00966/502525253</a
+                >
+              </li>
+              <li class="my-2">
+                <i class="fa-solid fa-location-dot text-light"></i>
+                <a class="text-light px-3">عين الخيف، 42369, Saudi Arabia</a>
+              </li>
+              <li class="my-2">
+                <i class="fa-solid fa-envelope text-light"></i>
+                <a href="mailto:media@alhayah.edu.sa" class="text-light px-3"
+                  >media@alhayah.edu.sa
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- to top button -->
+    <a
+      class="bttn d-flex justify-content-center align-items-center rounded-circle"
+      id="totop"
+    >
+      <i class="fas fa-chevron-up fa-2x"></i>
+    </a>
+    <!-- whatsapp button -->
+    <a
+      href="https://wa.me/966502525253"
+      class="whatsapp d-flex justify-content-center align-items-center rounded-circle"
+      id="totop"
+    >
+      <i class="fa-brands fa-whatsapp fs-1 text-light"></i>
+    </a>
+
+    <!-- bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="./js/all.min.js"></script>
+
+    <!-- javascript sheet -->
+    <script src="./js/main.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
